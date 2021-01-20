@@ -78,10 +78,14 @@ namespace Iterations
                 break;
             }
 
-            Console.WriteLine("\nEcho random numbers in a for loop");
+            Console.WriteLine("\nEcho random numbers with a for loop");
             var random = new Random();
             for (var i = 0; i < 10; i++)
                 Console.WriteLine(random.Next(1, 10));
+
+            Console.WriteLine("\nGenerate random password with a for loop");
+            for (var i = 0; i < 10; i++)
+                Console.Write((char)random.Next(97,122));
         }
     }
 }
