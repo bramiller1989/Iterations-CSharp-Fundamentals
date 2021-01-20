@@ -27,8 +27,8 @@ namespace Iterations
                 }
             }
             
-            Console.WriteLine("\n");
-            Console.WriteLine("Iterate over string using for loop");
+            //Console.WriteLine("\n");
+            //Console.WriteLine("Iterate over string using for loop");
 
             var name = "John Smith";
 
