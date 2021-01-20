@@ -17,6 +17,18 @@ namespace Iterations
             }
 
             Console.WriteLine("\n");
+            Console.WriteLine("Count up by 2 using while loop");
+
+            var idx = 0;
+            while (idx <= 10)
+            {
+                if (idx % 2 == 0)
+                    Console.WriteLine(idx);
+
+                idx++;
+            }
+
+            Console.WriteLine("\n");
             Console.WriteLine("Count down by 2 using for loop");
 
             for (var i = 10; i >= 1; i--)
@@ -27,15 +39,15 @@ namespace Iterations
                 }
             }
             
-            //Console.WriteLine("\n");
-            //Console.WriteLine("Iterate over string using for loop");
+            Console.WriteLine("\n");
+            Console.WriteLine("Iterate over string using for loop");
 
             var name = "John Smith";
 
-            //for (var i = 0; i < name.Length; i++)
-            //{
-            //    Console.WriteLine(name[i]);
-            //}
+            for (var i = 0; i < name.Length; i++)
+            {
+                Console.WriteLine(name[i]);
+            }
 
             Console.WriteLine("\n");
             Console.WriteLine("Iterate over string using for each loop");
