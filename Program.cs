@@ -16,8 +16,7 @@ namespace Iterations
                 }
             }
 
-            Console.WriteLine("\n");
-            Console.WriteLine("Count up by 2 using while loop");
+            Console.WriteLine("\nCount up by 2 using while loop");
 
             var idx = 0;
             while (idx <= 10)
@@ -28,8 +27,7 @@ namespace Iterations
                 idx++;
             }
 
-            Console.WriteLine("\n");
-            Console.WriteLine("Count down by 2 using for loop");
+            Console.WriteLine("\nCount down by 2 using for loop");
 
             for (var i = 10; i >= 1; i--)
             {
@@ -39,8 +37,7 @@ namespace Iterations
                 }
             }
             
-            Console.WriteLine("\n");
-            Console.WriteLine("Iterate over string using for loop");
+            Console.WriteLine("\nIterate over string using for loop");
 
             var name = "John Smith";
 
@@ -49,16 +46,14 @@ namespace Iterations
                 Console.WriteLine(name[i]);
             }
 
-            Console.WriteLine("\n");
-            Console.WriteLine("Iterate over string using for each loop");
+            Console.WriteLine("\nIterate over string using for each loop");
 
             foreach (var character in name)
             {
                 Console.WriteLine(character);
             }
 
-            Console.WriteLine("\n");
-            Console.WriteLine("Iterate over array using for each loop");
+            Console.WriteLine("\nIterate over array using for each loop");
 
             var numbers = new int[] {1, 2, 3, 4};
 
@@ -67,6 +62,18 @@ namespace Iterations
                 Console.WriteLine(number);
             }
 
+            Console.WriteLine("\n");
+
+            while(true)
+            {
+                Console.Write("Type your name: ");
+                var input = Console.ReadLine();
+
+                if (String.IsNullOrWhiteSpace(input))
+                    break;
+
+                Console.WriteLine("@Echo: " + input);
+            }
         }
     }
 }
