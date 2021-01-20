@@ -85,7 +85,7 @@ namespace Iterations
 
             Console.WriteLine("\nGenerate random password with a for loop");
             for (var i = 0; i < 10; i++)
-                Console.Write((char)random.Next(97,122));
+                Console.Write((char)('a' + random.Next(0,26)));
         }
     }
 }
