@@ -84,8 +84,14 @@ namespace Iterations
                 Console.WriteLine(random.Next(1, 10));
 
             Console.WriteLine("\nGenerate random password with a for loop");
+            var buffer = new char[10];
+
             for (var i = 0; i < 10; i++)
-                Console.Write((char)('a' + random.Next(0,26)));
+                buffer[i] = (char)('a' + random.Next(0,26));
+
+            var password = new string(buffer);
+
+            Console.WriteLine(password);
         }
     }
 }
