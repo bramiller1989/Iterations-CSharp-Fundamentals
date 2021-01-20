@@ -32,10 +32,10 @@ namespace Iterations
 
             var name = "John Smith";
 
-            for (var i = 0; i < name.Length; i++)
-            {
-                Console.WriteLine(name[i]);
-            }
+            //for (var i = 0; i < name.Length; i++)
+            //{
+            //    Console.WriteLine(name[i]);
+            //}
 
             Console.WriteLine("\n");
             Console.WriteLine("Iterate over string using for each loop");
