@@ -62,7 +62,7 @@ namespace Iterations
                 Console.WriteLine(number);
             }
 
-            Console.WriteLine("\n");
+            Console.WriteLine("\nPrompt for name then echo output in a while loop");
 
             while(true)
             {
@@ -77,6 +77,11 @@ namespace Iterations
 
                 break;
             }
+
+            Console.WriteLine("\nEcho random numbers in a for loop");
+            var random = new Random();
+            for (var i = 0; i < 10; i++)
+                Console.WriteLine(random.Next());
         }
     }
 }
