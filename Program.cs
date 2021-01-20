@@ -44,6 +44,17 @@ namespace Iterations
             {
                 Console.WriteLine(character);
             }
+
+            Console.WriteLine("\n");
+            Console.WriteLine("Iterate over array using for each loop");
+
+            var numbers = new int[] {1, 2, 3, 4};
+
+            foreach (var number in numbers)
+            {
+                Console.WriteLine(number);
+            }
+
         }
     }
 }
